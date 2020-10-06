@@ -161,10 +161,12 @@ class toolbarContainer extends Component {
       isDistractionFreeModeActive,
       isImageDownloadActive,
       isCompareActive,
+      isMobile,
     } = this.props;
     const notificationClass = notificationType
       ? ` wv-status-${notificationType}`
       : ' wv-status-hide';
+    const faSize = isMobile ? '2x' : '1x';
     return (
       <ErrorBoundary>
         <ButtonToolbar
@@ -183,7 +185,7 @@ class toolbarContainer extends Component {
                   CUSTOM_MODAL_PROPS.TOOLBAR_SHARE_LINK,
                 )}
               >
-                <FontAwesomeIcon icon={faShareSquare} size="1x" />
+                <FontAwesomeIcon icon={faShareSquare} size={faSize} />
               </Button>
               {config.ui && config.ui.projections ? (
                 <Button
@@ -195,7 +197,7 @@ class toolbarContainer extends Component {
                     CUSTOM_MODAL_PROPS.TOOLBAR_PROJECTION,
                   )}
                 >
-                  <FontAwesomeIcon icon={faGlobeAsia} size="1x" />
+                  <FontAwesomeIcon icon={faGlobeAsia} size={faSize} />
                 </Button>
               )
                 : ''}
@@ -216,7 +218,7 @@ class toolbarContainer extends Component {
                 }
                 onClick={this.openImageDownload}
               >
-                <FontAwesomeIcon icon={faCamera} size="1x" />
+                <FontAwesomeIcon icon={faCamera} size={faSize} />
               </Button>
             </>
           )}
@@ -227,7 +229,7 @@ class toolbarContainer extends Component {
             onClick={() => openModal('TOOLBAR_INFO', CUSTOM_MODAL_PROPS.TOOLBAR_INFO)}
             data-content={notificationContentNumber}
           >
-            <FontAwesomeIcon icon={faInfoCircle} size="1x" />
+            <FontAwesomeIcon icon={faInfoCircle} size={faSize} />
           </Button>
         </ButtonToolbar>
       </ErrorBoundary>
@@ -236,7 +238,7 @@ class toolbarContainer extends Component {
 }
 function mapStateToProps(state) {
   const {
-    notifications, palettes, compare, map, layers, proj, data, ui,
+    browser, notifications, palettes, compare, map, layers, proj, data, ui,
   } = state;
   const { isDistractionFreeModeActive } = ui;
   const { number, type } = notifications;
@@ -246,6 +248,7 @@ function mapStateToProps(state) {
     { proj: proj.id },
     state,
   );
+  const isMobile = browser.lessThan.medium;
   const isCompareActive = compare.active;
   const isDataDownloadActive = data.active;
   const activePalettes = palettes[activeString];
@@ -261,6 +264,7 @@ function mapStateToProps(state) {
       && !isDataDownloadActive,
     ),
     isCompareActive,
+    isMobile,
     hasCustomPalette: hasCustomPaletteInActiveProjection(
       activeLayersForProj,
       activePalettes,
@@ -344,6 +348,7 @@ toolbarContainer.propTypes = {
   isCompareActive: PropTypes.bool,
   isDistractionFreeModeActive: PropTypes.bool,
   isImageDownloadActive: PropTypes.bool,
+  isMobile: PropTypes.bool,
   isRotated: PropTypes.bool,
   notificationContentNumber: PropTypes.number,
   notificationType: PropTypes.string,

@@ -55,8 +55,9 @@ class MeasureButton extends React.Component {
   }
 
   render() {
-    const { isActive, isDistractionFreeModeActive } = this.props;
+    const { isActive, isDistractionFreeModeActive, isMobile } = this.props;
     const { showAlert, isTouchDevice } = this.state;
+    const faSize = isMobile ? '2x' : '1x';
     const shouldShowAlert = isActive && showAlert;
     const message = isTouchDevice ? mobileHelpMsg : helpMsg;
 
@@ -82,7 +83,7 @@ class MeasureButton extends React.Component {
           onMouseDown={this.onButtonClick}
           disabled={isActive}
         >
-          <FontAwesomeIcon icon={faRuler} size="1x" />
+          <FontAwesomeIcon icon={faRuler} size={faSize} />
         </Button>
       </>
     );
@@ -92,6 +93,7 @@ class MeasureButton extends React.Component {
 const mapStateToProps = (state, ownProps) => ({
   isActive: state.measure.isActive,
   isDistractionFreeModeActive: state.ui.isDistractionFreeModeActive,
+  isMobile: state.browser.lessThan.medium,
 });
 const mapDispatchToProps = (dispatch) => ({
   openModal: (key, customParams) => {
@@ -107,5 +109,6 @@ export default connect(
 MeasureButton.propTypes = {
   isActive: PropTypes.bool,
   isDistractionFreeModeActive: PropTypes.bool,
+  isMobile: PropTypes.bool,
   openModal: PropTypes.func,
 };
