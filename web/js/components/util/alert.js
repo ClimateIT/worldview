@@ -5,13 +5,14 @@ import { Portal } from 'react-portal';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faLayerGroup, faTimes, faRuler, faExclamationTriangle,
+  faLayerGroup, faTimes, faRuler, faExclamationTriangle, faMapMarkerAlt,
 } from '@fortawesome/free-solid-svg-icons';
 
 // icons used with alert by passing string as prop iconClassName
 const alertIcons = {
   faRuler,
   faLayerGroup,
+  faMapMarkerAlt,
 };
 
 /*

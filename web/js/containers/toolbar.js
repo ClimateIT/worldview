@@ -10,7 +10,7 @@ import {
 import Promise from 'bluebird';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faShareSquare, faGlobeAsia, faCamera, faInfoCircle,
+  faShareSquare, faGlobeAsia, faCamera, faInfoCircle, faSearchLocation,
 } from '@fortawesome/free-solid-svg-icons';
 import { openCustomContent, onToggle } from '../modules/modal/actions';
 import toggleDistractionFreeMode from '../modules/ui/actions';
@@ -35,6 +35,7 @@ import { hasCustomPaletteInActiveProjection } from '../modules/palettes/util';
 import { getLayers } from '../modules/layers/selectors';
 // GeoSearch
 import Geosearch from '../components/geosearch/geosearch';
+import { toggleShowGeosearch } from '../modules/geosearch/actions';
 
 
 Promise.config({ cancellation: true });
@@ -74,6 +75,16 @@ const CUSTOM_MODAL_PROPS = {
     bodyComponent: ImageDownload,
     desktopOnly: true,
     clickableBehindModal: true,
+  },
+  TOOLBAR_GEOSEARCH_MOBILE: {
+    headerText: 'Search for places or enter coordinates',
+    type: 'toolbar',
+    backdrop: false,
+    modalClassName: 'toolbar-geosearch-modal toolbar-modal toolbar-medium-modal',
+    clickableBehindModal: true,
+    wrapClassName: 'toolbar_modal_outer',
+    mobileOnly: true,
+    bodyComponent: Geosearch,
   },
 };
 class toolbarContainer extends Component {
@@ -152,6 +163,50 @@ class toolbarContainer extends Component {
     }
   }
 
+  // handle rendering of geosearch button 1) visibility and 2) control of click (mobile vs desktop)
+  renderGeosearchButtonComponent = () => {
+    const {
+      config,
+      isGeosearchExpanded,
+      isMobile,
+      openModal,
+      shouldBeCollapsed,
+      toggleShowGeosearch,
+    } = this.props;
+    const { features: { geocodeSearch: isFeatureEnabled } } = config;
+    const faSize = isMobile ? '2x' : '1x';
+
+    // do not render if geosearch feature isn't enabled
+    if (!isFeatureEnabled) {
+      return null;
+    }
+
+    const handleButtonClick = isMobile
+      ? () => openModal(
+        'TOOLBAR_GEOSEARCH_MOBILE',
+        CUSTOM_MODAL_PROPS.TOOLBAR_GEOSEARCH_MOBILE,
+      )
+      : () => toggleShowGeosearch();
+
+    const buttonDisplayConditions = isMobile || (!isMobile && !isGeosearchExpanded) || shouldBeCollapsed;
+    return (
+      <Button
+        style={{
+          display: buttonDisplayConditions ? 'inline-block' : 'none',
+        }}
+        type="button"
+        id="wv-geosearch-button"
+        className="wv-toolbar-button"
+        title="Search by place name or reverse search using coordinates"
+        // onTouchEnd={toggleShowGeosearch}
+        // onMouseDown={toggleShowGeosearch}
+        onClick={handleButtonClick}
+      >
+        <FontAwesomeIcon icon={faSearchLocation} size={faSize} />
+      </Button>
+    );
+  }
+
   render() {
     const {
       openModal,
@@ -175,7 +230,7 @@ class toolbarContainer extends Component {
         >
           { !isDistractionFreeModeActive && (
             <>
-              <Geosearch />
+              {this.renderGeosearchButtonComponent()}
               <Button
                 id="wv-link-button"
                 className="wv-toolbar-button"
@@ -238,7 +293,7 @@ class toolbarContainer extends Component {
 }
 function mapStateToProps(state) {
   const {
-    browser, notifications, palettes, compare, map, layers, proj, data, ui,
+    animation, browser, notifications, palettes, compare, map, measure, modal, layers, proj, data, ui, geosearch,
   } = state;
   const { isDistractionFreeModeActive } = ui;
   const { number, type } = notifications;
@@ -251,7 +306,13 @@ function mapStateToProps(state) {
   const isMobile = browser.lessThan.medium;
   const isCompareActive = compare.active;
   const isDataDownloadActive = data.active;
+  const isGeosearchExpanded = geosearch.isExpanded;
   const activePalettes = palettes[activeString];
+
+  // Collapse when Image download / GIF /  is open or measure tool active
+  const snapshotModalOpen = modal.isOpen && modal.id === 'TOOLBAR_SNAPSHOT';
+  const shouldBeCollapsed = snapshotModalOpen || measure.isActive || animation.gifActive;
+
   return {
     notificationType: type,
     notificationContentNumber: number,
@@ -264,7 +325,9 @@ function mapStateToProps(state) {
       && !isDataDownloadActive,
     ),
     isCompareActive,
+    isGeosearchExpanded,
     isMobile,
+    shouldBeCollapsed,
     hasCustomPalette: hasCustomPaletteInActiveProjection(
       activeLayersForProj,
       activePalettes,
@@ -283,6 +346,9 @@ function mapStateToProps(state) {
 const mapDispatchToProps = (dispatch) => ({
   toggleDistractionFreeMode: () => {
     dispatch(toggleDistractionFreeMode());
+  },
+  toggleShowGeosearch: () => {
+    dispatch(toggleShowGeosearch());
   },
   refreshStateAfterImageDownload: (activePalettes, rotation, isGraticule) => {
     if (activePalettes) {
@@ -347,6 +413,7 @@ toolbarContainer.propTypes = {
   hasGraticule: PropTypes.bool,
   isCompareActive: PropTypes.bool,
   isDistractionFreeModeActive: PropTypes.bool,
+  isGeosearchExpanded: PropTypes.bool,
   isImageDownloadActive: PropTypes.bool,
   isMobile: PropTypes.bool,
   isRotated: PropTypes.bool,
@@ -357,4 +424,6 @@ toolbarContainer.propTypes = {
   refreshStateAfterImageDownload: PropTypes.func,
   requestNotifications: PropTypes.func,
   rotation: PropTypes.number,
+  shouldBeCollapsed: PropTypes.bool,
+  toggleShowGeosearch: PropTypes.func,
 };
