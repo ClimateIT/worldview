@@ -20,6 +20,7 @@ bitly.json
 tools
 *~
 *.swp
+*.jpg
 options
 \#*
 .vagrant
