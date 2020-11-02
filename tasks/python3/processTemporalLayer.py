@@ -2,6 +2,47 @@ from datetime import datetime, date, timedelta
 import isodate
 import re
 
+def convert_to_interval_and_resolution(values):
+
+    # Remove fractional seconds if any
+    values = list(map(lambda v : v.split('.')[0], values))
+
+    # Convert to datetime
+    times = list(map(lambda t : datetime.strptime(t, "%Y-%m-%dT%H:%M:%S"), values))
+
+    expected_timedelta = (times[1] - times[0])
+
+    ranges = []
+    end = None
+    start = times[0]
+    for i in range(len(times[:-1])):
+        if (times[i+1] - times[i]) > expected_timedelta:
+            end = times[i]
+            ranges.append((start, end))
+            start = times[i+1]
+
+    end = times[-1]
+    ranges.append((start, end))
+
+    if expected_timedelta == timedelta(seconds=1):
+        inteval_string = 'PT1S'
+    elif expected_timedelta == timedelta(seconds=60):
+        inteval_string = 'PT1M'
+    elif expected_timedelta == timedelta(hours=1):
+        inteval_string = 'PT60M'
+    elif expected_timedelta == timedelta(hours=24):
+        inteval_string = 'P1D'
+    else:
+        assert False, "Unsupported time interval."
+
+    results = []
+    for r in ranges:
+        res = '{}Z/{}Z/{}'.format(r[0], r[-1], inteval_string)
+        results.append(res)
+
+    return results
+
+
 def to_list(val):
     return [val] if not hasattr(val, 'reverse') else val
 
@@ -14,6 +55,9 @@ def determine_end_date(key, date):
 # value and tranlates it to start and end dates
 def process_temporal(wv_layer, value):
     try:
+        if (type(value) is type(list())) and '/' not in value[0]:
+            value = convert_to_interval_and_resolution(value)
+
         ranges = to_list(value)
         if "T" in ranges[0]:
             wv_layer["period"] = "subdaily"

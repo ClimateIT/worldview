@@ -6,6 +6,7 @@ from optparse import OptionParser
 import os
 import sys
 import time
+import shutil
 from processTemporalLayer import process_temporal
 
 prog = os.path.basename(__file__)
@@ -101,6 +102,12 @@ for layer_id in list(wv["layers"].keys()):
         error("[%s] No palette definition" % (layer_id))
     elif "palette" in layer:
         palette_id = layer["palette"]["id"]
+        palette_file = os.path.join(config_dir, "palettes", palette_id + ".json")
+        if not os.path.exists(palette_file):
+            print('{} does not exist'.format(palette_file))
+            palette_src = os.path.join('config/active/common/config/wv.json/palettes/', palette_id + ".json")
+            shutil.copyfile(palette_src, palette_file)
+
         if not os.path.exists(os.path.join(config_dir, "palettes",
                 palette_id + ".json")):
             error("[%s] Unknown palette: %s" % (layer_id, palette_id))
