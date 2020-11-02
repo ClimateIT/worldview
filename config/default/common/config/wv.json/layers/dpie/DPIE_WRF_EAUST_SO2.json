@@ -1,0 +1,27 @@
+{
+  "layers": {
+    "DPIE_WRF_EAUST_SO2": {
+      "id": "DPIE_WRF_EAUST_SO2",
+      "title": "Sulfur Dioxide (East Australia domain)",
+      "subtitle": "NSW Dept. of Planning Industry and Environment",
+      "description": "Forecast Sulfur Dioxide over Eastern Australia",
+      "group": "overlays",
+      "layergroup": [
+	      "dpie"
+      ],		
+      "format": "image/png",
+      "style": "DPIE:Sulfur_Dioxide",
+      "palette": {
+	 	"id": "DPIE_Sulfur_Dioxide"
+      },
+      "projections": {
+	      "geographic": {
+		      "source": "DPIE:wmts",
+		      "matrixSet": "Worldview_geographic"
+	      }
+      },
+      "type": "wmts",
+      "futureLayer": "true"
+    }
+  }
+}

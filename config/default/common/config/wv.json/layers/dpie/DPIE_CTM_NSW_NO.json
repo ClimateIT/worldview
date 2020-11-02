@@ -1,0 +1,27 @@
+{
+  "layers": {
+    "DPIE_CTM_NSW_NO": {
+      "id": "DPIE_CTM_NSW_NO",
+      "title": "Nitric Oxide (NSW domain)",
+      "subtitle": "NSW / DPIE",
+      "description": "Forecast Nitric Oxide over NSW",
+      "group": "overlays",
+      "layergroup": [
+	      "dpie"
+      ],		
+      "format": "image/png",
+      "style": "DPIE:Nitric_Oxide",
+      "palette": {
+	 	"id": "DPIE_Nitric_Oxide"
+      },
+      "projections": {
+	      "geographic": {
+		      "source": "DPIE:wmts",
+		      "matrixSet": "Worldview_geographic"
+	      }
+      },
+      "type": "wmts",
+      "futureLayer": "true"
+    }
+  }
+}

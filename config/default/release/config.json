@@ -11,7 +11,11 @@
         {
             "from": "https://gibs.earthdata.nasa.gov/wmts/epsg3031/best/wmts.cgi?request=GetCapabilities",
             "to": "gibs-antarctic.xml"
-        }
+        },
+        {
+	        "from": "http://geoserver.climateit.com.au/geoserver/DPIE/gwc/service/wmts?request=GetCapabilities",
+            "to": "dpie.xml"
+        },
     ],
     "wv-options-wmts": [
         {
@@ -34,6 +38,13 @@
             "to": "gibs-antarctic.json",
             "projection": "antarctic",
             "maxResolution": 8192.0
-        }
+        },
+        {
+            "source": "DPIE:wmts",
+            "from": "dpie.xml",
+            "to": "dpie.json",
+            "projection": "geographic",
+            "maxResolution": 0.5625
+        },
     ]
 }

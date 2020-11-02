@@ -1,0 +1,24 @@
+{
+  "layers": {
+    "DPIE_WRF_NSW_TEMP": {
+      "id": "DPIE_WRF_NSW_TEMP",
+      "title": "Temperature Forecast for NSW",
+      "subtitle": "NSW Dept. of Planning Industry and Environment",
+      "description": "Forecast Temperature for NSW",
+      "group": "overlays",
+      "format": "image/png",
+      "style": "DPIE:Temperature",
+      "palette": {
+	 	"id": "DPIE_TEMP"
+      },
+      "projections": {
+	      "geographic": {
+		      "source": "DPIE:wmts",
+		      "matrixSet": "Worldview_geographic"
+	      }
+      },
+      "type": "wmts",
+      "futureLayer": "true"
+    }
+  }
+}

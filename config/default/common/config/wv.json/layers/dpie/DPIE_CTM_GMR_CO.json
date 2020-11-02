@@ -1,0 +1,27 @@
+{
+  "layers": {
+    "DPIE_CTM_GMR_CO": {
+      "id": "DPIE_CTM_GMR_CO",
+      "title": "Carbon Monoxide (NSW Greater Metropolitan Region domain)",
+      "subtitle": "NSW Dept. of Planning Industry and Environment",
+      "description": "Forecast Carbon Monoxide over NSW GMR",
+      "group": "overlays",
+      "layergroup": [
+	      "dpie"
+      ],		
+      "format": "image/png",
+      "style": "DPIE:Carbon_Monoxide_Flux",
+      "palette": {
+	 	"id": "DPIE_Carbon_Monoxide_Flux"
+      },
+      "projections": {
+	      "geographic": {
+		      "source": "DPIE:wmts",
+		      "matrixSet": "Worldview_geographic"
+	      }
+      },
+      "type": "wmts",
+      "futureLayer": "true"
+    }
+  }
+}

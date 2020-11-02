@@ -1,0 +1,27 @@
+{
+  "layers": {
+    "DPIE_WRF_EAUST_CO": {
+      "id": "DPIE_WRF_EAUST_CO",
+      "title": "Carbon Monoxide (East Australia domain)",
+      "subtitle": "NSW Dept. of Planning Industry and Environment",
+      "description": "Forecast Carbon Monoxide over Eastern Australia",
+      "group": "overlays",
+      "layergroup": [
+	      "dpie"
+      ],		
+      "format": "image/png",
+      "style": "DPIE:Carbon_Monoxide_Flux",
+      "palette": {
+	 	"id": "DPIE_Carbon_Monoxide_Flux"
+      },
+      "projections": {
+	      "geographic": {
+		      "source": "DPIE:wmts",
+		      "matrixSet": "Worldview_geographic"
+	      }
+      },
+      "type": "wmts",
+      "futureLayer": "true"
+    }
+  }
+}

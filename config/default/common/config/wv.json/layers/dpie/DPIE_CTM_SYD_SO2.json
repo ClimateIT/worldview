@@ -1,0 +1,24 @@
+{
+  "layers": {
+    "DPIE_CTM_SYD_SO2": {
+      "id": "DPIE_CTM_SYD_SO2",
+      "title": "Sulfur Dioxide (Sydney domain)",
+      "subtitle": "NSW Dept. of Planning Industry and Environment",
+      "description": "Forecast of Sulfur Dioxide over Sydney",
+      "group": "overlays",
+      "format": "image/png",
+      "style": "DPIE:Sulfur_Dioxide",
+      "palette": {
+	 	"id": "DPIE_Sulfur_Dioxide"
+      },
+      "projections": {
+	      "geographic": {
+		      "source": "DPIE:wmts",
+		      "matrixSet": "Worldview_geographic"
+	      }
+      },
+      "type": "wmts",
+      "futureLayer": "true"
+    }
+  }
+}

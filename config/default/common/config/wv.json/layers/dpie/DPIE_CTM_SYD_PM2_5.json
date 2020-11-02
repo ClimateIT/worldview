@@ -1,0 +1,24 @@
+{
+  "layers": {
+    "DPIE_CTM_SYD_PM2_5": {
+      "id": "DPIE_CTM_SYD_PM2_5",
+      "title": "Particulate Matter 2.5 (Sydney domain)",
+      "subtitle": "NSW Dept. of Planning Industry and Environment",
+      "description": "Forecast PM 2.5 over Sydney",
+      "group": "overlays",
+      "format": "image/png",
+      "style": "DPIE:PM2_5",
+      "palette": {
+	 	"id": "DPIE_PM2_5"
+      },
+      "projections": {
+	      "geographic": {
+		      "source": "DPIE:wmts",
+		      "matrixSet": "Worldview_geographic"
+	      }
+      },
+      "type": "wmts",
+      "futureLayer": "true"
+    }
+  }
+}

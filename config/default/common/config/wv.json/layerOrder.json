@@ -1,5 +1,46 @@
 {
 	"layerOrder": [
+	    "NCAR_WACCM_CO_1000hPa",
+	    "NCAR_WACCM_DUST_1000hPa",
+	    "NCAR_WACCM_NOX_1000hPa",
+	    "NCAR_WACCM_O3_1000hPa",
+	    "NCAR_WACCM_PM25_1000hPa",
+
+        "DPIE_CTM_NSW_PM10",
+        "DPIE_CTM_GMR_PM10",
+        "DPIE_CTM_SYD_PM10",
+        "DPIE_WRF_EAUST_PM10",
+
+        "DPIE_CTM_NSW_PM2_5",
+        "DPIE_CTM_GMR_PM2_5",
+        "DPIE_CTM_SYD_PM2_5",
+
+        "DPIE_CTM_NSW_NO2",
+        "DPIE_CTM_GMR_NO2",
+        "DPIE_CTM_SYD_NO2",
+
+        "DPIE_CTM_NSW_NO",
+        "DPIE_CTM_GMR_NO",
+        "DPIE_CTM_SYD_NO",
+
+        "DPIE_CTM_NSW_CO",
+        "DPIE_CTM_GMR_CO",
+        "DPIE_CTM_SYD_CO",
+        "DPIE_WRF_EAUST_CO",
+
+        "DPIE_CTM_SYD_SO2",
+        "DPIE_CTM_GMR_SO2",
+        "DPIE_CTM_NSW_SO2",
+        "DPIE_WRF_EAUST_SO2",
+
+        "DPIE_CTM_SYD_O3",
+        "DPIE_CTM_GMR_O3",
+        "DPIE_CTM_NSW_O3",
+        "DPIE_WRF_EAUST_O3",
+
+        "DPIE_WRF_NSW_TEMP",
+        "DPIE_vertical_dust_flux",
+
 		"VIIRS_SNPP_CorrectedReflectance_TrueColor",
 		"VIIRS_SNPP_CorrectedReflectance_BandsM3-I3-M11",
 		"VIIRS_SNPP_CorrectedReflectance_BandsM11-I2-I1",
