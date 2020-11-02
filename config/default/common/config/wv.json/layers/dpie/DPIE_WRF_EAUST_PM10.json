@@ -1,0 +1,27 @@
+{
+  "layers": {
+    "DPIE_WRF_EAUST_PM10": {
+      "id": "DPIE_WRF_EAUST_PM10",
+      "title": "Particulate Matter 10 (East Australia domain)",
+      "subtitle": "NSW Dept. of Planning Industry and Environment",
+      "description": "Forecast PM 10 over Eastern Australia",
+      "group": "overlays",
+      "layergroup": [
+	      "dpie"
+      ],		
+      "format": "image/png",
+      "style": "DPIE:PM10",
+      "palette": {
+	 	"id": "DPIE_PM10"
+      },
+      "projections": {
+	      "geographic": {
+		      "source": "DPIE:wmts",
+		      "matrixSet": "Worldview_geographic"
+	      }
+      },
+      "type": "wmts",
+      "futureLayer": "true"
+    }
+  }
+}

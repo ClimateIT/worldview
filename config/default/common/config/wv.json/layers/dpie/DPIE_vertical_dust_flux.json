@@ -1,0 +1,24 @@
+{
+  "layers": {
+    "DPIE_vertical_dust_flux": {
+      "id": "DPIE_vertical_dust_flux",
+      "title": "Wind-driven vertical dust flux",
+      "subtitle": "NSW Dept. of Planning Industry and Environment",
+      "description": "Vertical wind-blown dust flux over Australia",
+      "group": "overlays",
+      "format": "image/png",
+      "style": "DPIE:dust",
+      "palette": {
+	 	"id": "DPIE_vertical_dust_flux"
+      },
+      "projections": {
+	      "geographic": {
+		      "source": "DPIE:wmts",
+		      "matrixSet": "Worldview_geographic"
+	      }
+      },
+      "type": "wmts",
+      "futureLayer": "true"
+    }
+  }
+}

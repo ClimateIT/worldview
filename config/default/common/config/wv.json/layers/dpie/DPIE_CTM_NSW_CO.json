@@ -1,0 +1,27 @@
+{
+  "layers": {
+    "DPIE_CTM_NSW_CO": {
+      "id": "DPIE_CTM_NSW_CO",
+      "title": "Carbon Monoxide (NSW domain)",
+      "subtitle": "NSW / DPIE",
+      "description": "Forecast Carbon Monoxide over NSW",
+      "group": "overlays",
+      "layergroup": [
+	      "dpie"
+      ],		
+      "format": "image/png",
+      "style": "DPIE:Carbon_Monoxide_Flux",
+      "palette": {
+	 	"id": "DPIE_Carbon_Monoxide_Flux"
+      },
+      "projections": {
+	      "geographic": {
+		      "source": "DPIE:wmts",
+		      "matrixSet": "Worldview_geographic"
+	      }
+      },
+      "type": "wmts",
+      "futureLayer": "true"
+    }
+  }
+}
