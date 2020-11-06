@@ -118,9 +118,12 @@ def process_remote(entry):
 # Fetch a single colormap and write to file
 def process_single_colormap(link):
     try:
+        output_file = os.path.join(colormaps_dir, os.path.basename(link))
+        print("%s: Fetching colormaps from %s and saving to %s" % (prog, link, output_file))
+        sys.stdout.flush()
+
         response = http.request("GET", link)
         contents = response.data
-        output_file = os.path.join(colormaps_dir, os.path.basename(link))
         with open(output_file, "w") as fp:
             fp.write(contents.decode('utf-8'))
     except Exception as e:

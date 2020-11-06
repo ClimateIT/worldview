@@ -4,11 +4,11 @@
       "id": "DPIE_CTM_NSW_CO",
       "title": "Carbon Monoxide (NSW domain)",
       "subtitle": "NSW / DPIE",
-      "description": "Forecast Carbon Monoxide over NSW",
+      "description": "dpie/DPIE_CTM_NSW_CO",
       "group": "overlays",
       "layergroup": [
 	      "dpie"
-      ],		
+      ],
       "format": "image/png",
       "style": "DPIE:Carbon_Monoxide_Flux",
       "palette": {

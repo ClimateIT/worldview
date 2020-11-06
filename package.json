@@ -48,7 +48,7 @@
     "docker:restart": "run-s docker:stop docker:start",
     "docker:shell": "docker exec -it worldview /bin/bash ; true",
     "docker:shellwin": "winpty docker exec -it worldview //bin/bash",
-    "docker:start": "docker network create --driver bridge worldview_default; docker run --rm --name worldview --mount type=bind,source=\"$(pwd)\",target=/build --mount type=volume,target=/build/node_modules --network=worldview_default --expose=3000 -d worldview; docker exec -it worldview /bin/bash /build/tasks/start.sh",
+    "docker:start": "docker network create --driver bridge worldview_default; docker run --rm --name worldview --mount type=bind,source=\"$(pwd)\",target=/build --mount type=volume,target=/build/node_modules --network=worldview_default -p 3000:3000  -d worldview; docker exec -it worldview /bin/bash /build/tasks/start.sh",
     "docker:stop": "docker network rm worldview_default; docker stop -t 1 worldview ; true",
     "e2e": "run-s --continue-on-error --silent e2e:gui:*",
     "e2e:headless": "run-s --continue-on-error --silent e2e:headless:*",
