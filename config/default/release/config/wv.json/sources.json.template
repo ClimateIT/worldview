@@ -22,10 +22,10 @@
             "url": "https://gis.unep-wcmc.org/arcgis/services/wdpa/public/MapServer/WMSServer"
         },
         "DPIE:wms": {
-           "url": "http:///geoserver.climateit.com.au/geoserver/DPIE/wms"
+           "url": "http://GEOSERVER_DPIE_WORKSPACE_URL/wms"
         },
         "DPIE:wmts": {
-           "url": "http://geoserver.climateit.com.au/geoserver/DPIE/gwc/service/wmts"
+           "url": "http://GEOSERVER_DPIE_WORKSPACE_URL/gwc/service/wmts"
         }
     }
 }

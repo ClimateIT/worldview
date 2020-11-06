@@ -105,7 +105,7 @@ for layer_id in list(wv["layers"].keys()):
         palette_file = os.path.join(config_dir, "palettes", palette_id + ".json")
         if not os.path.exists(palette_file):
             print('{} does not exist'.format(palette_file))
-            palette_src = os.path.join('config/active/common/config/wv.json/palettes/', palette_id + ".json")
+            palette_src = os.path.join('config/default/common/config/wv.json/palettes', palette_id + ".json")
             shutil.copyfile(palette_src, palette_file)
 
         if not os.path.exists(os.path.join(config_dir, "palettes",
