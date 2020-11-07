@@ -1,0 +1,26 @@
+{
+  "layers": {
+    "NCAR_WACCM_NOX_1000hPa": {
+      "id": "NCAR_WACCM_NOX_1000hPa",
+      "title": "NCAR WACCM NOX Forecast",
+      "subtitle": "1000hPa (surface)",
+      "description": "Forecast Nitrious Oxide",
+      "group": "overlays",
+      "layergroup": [
+	      "acom"
+      ],		
+      "format": "image/png",
+      "palette": {
+	 	"id": "NCAR_WACCM_NOX_1000hPa"
+      },
+      "projections": {
+	      "geographic": {
+		      "source": "ACOM:wmts",
+		      "matrixSet": "EPSG4326_2km"
+	      }
+      },
+      "type": "wmts",
+      "futureLayer": "true"
+    }
+  }
+}
