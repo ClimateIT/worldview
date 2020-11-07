@@ -119,8 +119,8 @@ def process_remote(entry):
 def process_single_colormap(link):
     try:
         output_file = os.path.join(colormaps_dir, os.path.basename(link))
-        print("%s: Fetching colormaps from %s and saving to %s" % (prog, link, output_file))
-        sys.stdout.flush()
+        #print("%s: Fetching colormaps from %s and saving to %s" % (prog, link, output_file))
+        #sys.stdout.flush()
 
         response = http.request("GET", link)
         contents = response.data

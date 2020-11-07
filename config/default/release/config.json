@@ -15,6 +15,10 @@
         {
             "from": "http://worldview.climateit.com.au/geoserver/DPIE/gwc/service/wmts?request=GetCapabilities",
             "to": "dpie.xml"
+        },
+        {
+            "from": "http://worldview.climateit.com.au/onearth/wmts/epsg4326/wmts.cgi?request=GetCapabilities",
+            "to": "acom.xml"
         }
     ],
     "wv-options-wmts": [
@@ -43,6 +47,13 @@
             "source": "DPIE:wmts",
             "from": "dpie.xml",
             "to": "dpie.json",
+            "projection": "geographic",
+            "maxResolution": 0.5625
+        },
+        {
+            "source": "ACOM:wmts",
+            "from": "acom.xml",
+            "to": "acom.json",
             "projection": "geographic",
             "maxResolution": 0.5625
         }

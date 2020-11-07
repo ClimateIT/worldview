@@ -13,8 +13,12 @@
             "to": "gibs-antarctic.xml"
         },
         {
-	        "from": "http://GEOSERVER_DPIE_WORKSPACE_URL/gwc/service/wmts?request=GetCapabilities",
+	        "from": "http://WORLDVIEW_SERVER/geoserver/DPIE/gwc/service/wmts?request=GetCapabilities",
             "to": "dpie.xml"
+        },
+        {
+            "from": "http://WORLDVIEW_SERVER/onearth/wmts/epsg4326/wmts.cgi?request=GetCapabilities",
+            "to": "acom.xml"
         }
     ],
     "wv-options-wmts": [
@@ -43,6 +47,13 @@
             "source": "DPIE:wmts",
             "from": "dpie.xml",
             "to": "dpie.json",
+            "projection": "geographic",
+            "maxResolution": 0.5625
+        }
+        {
+            "source": "ACOM:wmts",
+            "from": "acom.xml",
+            "to": "acom.json",
             "projection": "geographic",
             "maxResolution": 0.5625
         }
