@@ -22,10 +22,13 @@
             "url": "https://gis.unep-wcmc.org/arcgis/services/wdpa/public/MapServer/WMSServer"
         },
         "DPIE:wms": {
-           "url": "http://GEOSERVER_DPIE_WORKSPACE_URL/wms"
+           "url": "http://WORLDVIEW_SERVER/geoserver/DPIE/wms"
         },
         "DPIE:wmts": {
-           "url": "http://GEOSERVER_DPIE_WORKSPACE_URL/gwc/service/wmts"
+           "url": "http://WORLDVIEW_SERVER/gwc/service/wmts"
+        },
+        "ACOM:wmts": {
+           "url": "http://WORLDVIEW_SERVER/onearth/wmts/epsg4326/wmts.cgi"
         }
     }
 }

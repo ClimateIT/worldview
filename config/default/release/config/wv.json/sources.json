@@ -26,6 +26,9 @@
         },
         "DPIE:wmts": {
            "url": "http://worldview.climateit.com.au/geoserver/DPIE/gwc/service/wmts"
+        },
+        "ACOM:wmts": {
+           "url": "http://worldview.climateit.com.au/onearth/wmts/epsg4326/wmts.cgi"
         }
     }
 }
