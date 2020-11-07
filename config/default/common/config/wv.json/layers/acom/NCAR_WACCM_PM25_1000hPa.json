@@ -1,0 +1,26 @@
+{
+  "layers": {
+    "NCAR_WACCM_PM25_1000hPa": {
+      "id": "NCAR_WACCM_PM25_1000hPa",
+      "title": "NCAR WACCM PM2.5 Forecast",
+      "subtitle": "1000hPa (surface)",
+      "description": "Forecast Particulate Matter 2.5",
+      "group": "overlays",
+      "layergroup": [
+	      "acom"
+      ],		
+      "format": "image/png",
+      "palette": {
+	 	"id": "NCAR_WACCM_PM25_1000hPa"
+      },
+      "projections": {
+	      "geographic": {
+		      "source": "ACOM:wmts",
+		      "matrixSet": "EPSG4326_2km"
+	      }
+      },
+      "type": "wmts",
+      "futureLayer": "true"
+    }
+  }
+}
