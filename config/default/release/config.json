@@ -13,7 +13,7 @@
             "to": "gibs-antarctic.xml"
         },
         {
-            "from": "http://geoserver.climateit.com.au/geoserver/DPIE/gwc/service/wmts?request=GetCapabilities",
+            "from": "http://worldview.climateit.com.au/geoserver/DPIE/gwc/service/wmts?request=GetCapabilities",
             "to": "dpie.xml"
         }
     ],
