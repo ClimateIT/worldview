@@ -1,0 +1,22 @@
+{
+    "measurements": {
+        "Nitric Oxide - DPIE": {
+            "id": "nitric-oxide",
+            "title":    "Nitric Oxide",
+            "subtitle": "DPIE/CTM",
+            "sources": {
+                "DPIE CTM": {
+                    "id": "dpie-ctm-no",
+                    "title": "DPIE/CTM",
+                    "description": "dpie/NitricOxide",
+                    "image": "",
+                    "settings": [
+                        "DPIE_CTM_NSW_NO",
+                        "DPIE_CTM_GMR_NO",
+                        "DPIE_CTM_SYD_NO"
+                    ]
+                }
+            }
+        }
+    }
+}

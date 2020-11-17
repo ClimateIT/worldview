@@ -1,0 +1,31 @@
+{
+    "measurements": {
+        "Ozone - DPIE": {
+            "id": "ozone",
+            "title": "Ozone",
+            "subtitle": "DPIE/CTM, DPIE/WRF-Chem",
+            "sources": {
+                "DPIE CTM": {
+                    "id": "dpie-ctm-o3",
+                    "title": "DPIE/CTM",
+                    "description": "dpie/Ozone",
+                    "image": "",
+                    "settings": [
+                        "DPIE_CTM_NSW_O3",
+                        "DPIE_CTM_GMR_O3",
+                        "DPIE_CTM_SYD_O3"
+                    ]
+                },
+                "DPIE WRF-Chem": {
+                    "id": "dpie-wrf-o3",
+                    "title": "DPIE/WRF-Chem",
+                    "description": "dpie/Ozone",
+                    "image": "",
+                    "settings": [
+                        "DPIE_WRF_EAUST_O3"
+                    ]
+                }
+            }
+        }
+    }
+}
