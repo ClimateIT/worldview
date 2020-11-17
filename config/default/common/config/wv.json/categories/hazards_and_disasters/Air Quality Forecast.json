@@ -1,0 +1,21 @@
+{
+    "categories": {
+        "hazards and disasters": {
+            "Air Quality Forecast": {
+                "title": "Air Quality Forecast",
+                "id": "air-quality-forecast",
+                "image": "air-quality.jpg",
+                "description": "",
+                "measurements": [
+                    "Carbon Monoxide - DPIE",
+                    "Ozone - DPIE",
+                    "Particulate Matter 2.5 - DPIE",
+                    "Particulate Matter 10 - DPIE",
+                    "Sulfur Dioxide - DPIE",
+                    "Nitrogen Dioxide - DPIE",
+                    "Nitric Oxide - DPIE"
+                ]
+            }
+        }
+    }
+}

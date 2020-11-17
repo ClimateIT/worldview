@@ -1,0 +1,31 @@
+{
+    "measurements": {
+        "Sulfur Dioxide - DPIE": {
+            "id": "sulfur-dioxide",
+            "title":    "Sulfur Dioxide",
+            "subtitle": "DPIE/CTM, DPIE/WRF-Chem",
+            "sources": {
+                "DPIE CTM": {
+                    "id": "dpie-ctm-so2",
+                    "title": "DPIE/CTM",
+                    "description": "dpie/SulfurDioxide",
+                    "image": "",
+                    "settings": [
+                        "DPIE_CTM_NSW_SO2",
+                        "DPIE_CTM_GMR_SO2",
+                        "DPIE_CTM_SYD_SO2"
+                    ]
+                },
+                "DPIE WRF-Chem": {
+                    "id": "dpie-wrf-so2",
+                    "title": "DPIE/WRF-Chem",
+                    "description": "dpie/SulfurDioxide",
+                    "image": "",
+                    "settings": [
+                        "DPIE_WRF_EAUST_SO2"
+                    ]
+                }
+       	    }
+        }
+    }
+}

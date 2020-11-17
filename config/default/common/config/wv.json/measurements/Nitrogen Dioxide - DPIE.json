@@ -1,0 +1,22 @@
+{
+    "measurements": {
+        "Nitrogen Dioxide - DPIE": {
+            "id": "nitrogen-dioxide",
+            "title":    "Nitrogen Dioxide",
+            "subtitle": "DPIE/CTM",
+            "sources": {
+                "DPIE CTM": {
+                    "id": "dpie-ctm-no2",
+                    "title": "DPIE/CTM",
+                    "description": "dpie/NitrogenDioxide",
+                    "image": "",
+                    "settings": [
+                        "DPIE_CTM_NSW_NO2",
+                        "DPIE_CTM_GMR_NO2",
+                        "DPIE_CTM_SYD_NO2"
+                    ]
+                }
+            }
+        }
+    }
+}
