@@ -86,11 +86,14 @@ def process_layer(layer):
                     vectorstyles[vector_style_id] = vector_style_link
 
 def process_remote(entry):
-    url = entry["from"]
-    print("%s: %s" % (prog, url))
-    response = http.request('GET', url)
-    contents = response.data
+
     output_file = os.path.join(output_dir, entry["to"])
+    url = entry["from"]
+    print("%s: %s -> %s" % (prog, url, output_file))
+
+    response = http.request('GET', url)
+
+    contents = response.data
 
     # Write GetCapabilities responses to XML files
     with open(output_file, "w") as fp:
