@@ -7,6 +7,8 @@
         "NCAR_WACCM_O3_1000hPa",
         "NCAR_WACCM_PM25_1000hPa",
 
+        "DPIE_CTM_Reanalysis_NSW_CO",
+
         "DPIE_CTM_NSW_PM10",
         "DPIE_CTM_GMR_PM10",
         "DPIE_CTM_SYD_PM10",

@@ -3,11 +3,37 @@
         "Nitrogen Dioxide - DPIE": {
             "id": "nitrogen-dioxide",
             "title":    "Nitrogen Dioxide",
-            "subtitle": "DPIE/CTM",
+            "subtitle": "DPIE/CTM-Reanalysis, DPIE/CTM-Bushfire, DPIE/CTM-No-fire",
             "sources": {
-                "DPIE CTM": {
-                    "id": "dpie-ctm-no2",
-                    "title": "DPIE/CTM",
+                "DPIE CTM-Reanalysis": {
+                    "id": "dpie-ctm-reanalysis-no2",
+                    "title": "DPIE/CTM-Reanalysis",
+                    "description": "dpie/NitrogenDioxide",
+                    "image": "",
+                    "settings": [
+                        "DPIE_CTM_NSW_NO2",
+                        "DPIE_CTM_GMR_NO2",
+                        "DPIE_CTM_SYD_NO2"
+                    ]
+                }
+            },
+            "sources": {
+                "DPIE CTM-Bushfire": {
+                    "id": "dpie-ctm-bushfire-no2",
+                    "title": "DPIE/CTM-Bushfire",
+                    "description": "dpie/NitrogenDioxide",
+                    "image": "",
+                    "settings": [
+                        "DPIE_CTM_NSW_NO2",
+                        "DPIE_CTM_GMR_NO2",
+                        "DPIE_CTM_SYD_NO2"
+                    ]
+                }
+            },
+            "sources": {
+                "DPIE CTM-No-fire": {
+                    "id": "dpie-ctm-no-fire-no2",
+                    "title": "DPIE/CTM-No-fire",
                     "description": "dpie/NitrogenDioxide",
                     "image": "",
                     "settings": [

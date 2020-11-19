@@ -1,0 +1,83 @@
+{
+    "id": "DPIE_CO",
+    "maps": [
+        {
+            "type": "continuous",
+            "entries": {
+                "type": "continuous",
+                "colors": [
+                    "42a93cff",
+                    "eec900ff",
+                    "e47400ff",
+                    "ba0029ff",
+                    "782d49ff"
+                ],
+                "refs": [
+                    "1",
+                    "2",
+                    "3",
+                    "4",
+                    "5"
+                ],
+                "values": [
+                    [
+                        0.0,
+                        5.95
+                    ],
+                    [
+                        5.95,
+                        8.95
+                    ],
+                    [
+                        8.95,
+                        13.45
+                    ],
+                    [
+                        13.45,
+                        17.95
+                    ],
+                    [
+                        17.95,
+                        3e38
+                    ]
+                ],
+                "title": "DPIE_CO"
+            },
+            "legend": {
+                "colors": [
+                    "42a93cff",
+                    "eec900ff",
+                    "e47400ff",
+                    "ba0029ff",
+                    "782d49ff"
+                ],
+                "type": "continuous",
+                "tooltips": [
+                    "0.0 - 5.95",
+                    "5.95 - 8.95",
+                    "8.95 - 13.45",
+                    "13.45 - 17.95",
+                    "17.95 - Inf"
+                ],
+                "ticks": [
+                    5.95,
+                    8.95,
+                    13.45,
+                    17.95
+                ],
+                "refs": [
+                    "1",
+                    "2",
+                    "3",
+                    "4"
+                ],
+                "title": "DPIE_CO",
+                "id": "DPIE_CO_legend",
+                "minLabel": "0.0",
+                "maxLabel": ">= 17.95",
+                "units": "ppm"
+            },
+            "title": "DPIE_CO"
+        }
+    ]
+}

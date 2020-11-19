@@ -71,6 +71,7 @@ def process_temporal(wv_layer, value):
         start_date = datetime.max
         end_date = datetime.min
         date_range_start, date_range_end, range_interval = [], [], []
+
         for range in ranges:
             times = range.split('/')
             if wv_layer["period"] == "daily" \
@@ -108,6 +109,16 @@ def process_temporal(wv_layer, value):
                 wv_layer["endDate"] = end_date.strftime("%Y-%m-%d") + "T" + end_date.strftime("%H:%M:%S") + "Z"
             if date_range_start and date_range_end:
                 wv_layer["dateRanges"] = [{"startDate": s, "endDate": e, "dateInterval": i} for s, e, i in zip(date_range_start, date_range_end, range_interval)]
+
+        if 'dateRanges' not in wv_layer:
+            import pdb
+            pdb.set_trace()
+
+        #if 'DPIE' in wv_layer['id']:
+        #    import pdb
+        #    pdb.set_trace()
+
+
     except ValueError:
         raise
         raise Exception("Invalid time: {0}".format(range))

@@ -1,14 +1,36 @@
 {
     "measurements": {
         "Particulate Matter 2.5 - DPIE": {
-            "id": "pm2.5",
+            "id": "pm2_5",
             "title":    "Particulate Matter 2.5",
-            "subtitle": "DPIE/CTM",
+            "subtitle": "DPIE/CTM-Reanalysis, DPIE/CTM-Bushfire, DPIE/CTM-No-fire",
             "sources": {
-                "DPIE CTM": {
-                    "id": "dpie-ctm-pm2.5",
-                    "title": "DPIE/CTM",
-                    "description": "dpie/ParticulateMatter2.5",
+                "DPIE CTM-Reanalysis": {
+                    "id": "dpie-ctm-reanalysis-pm2_5",
+                    "title": "DPIE/CTM-Reanalysis",
+                    "description": "dpie/ParticulateMatter2_5",
+                    "image": "",
+                    "settings": [
+                        "DPIE_CTM_NSW_PM2_5",
+                        "DPIE_CTM_GMR_PM2_5",
+                        "DPIE_CTM_SYD_PM2_5"
+                    ]
+                },
+                "DPIE CTM-Bushfire": {
+                    "id": "dpie-ctm-bushfire-pm2_5",
+                    "title": "DPIE/CTM-Bushfire",
+                    "description": "dpie/ParticulateMatter2_5",
+                    "image": "",
+                    "settings": [
+                        "DPIE_CTM_NSW_PM2_5",
+                        "DPIE_CTM_GMR_PM2_5",
+                        "DPIE_CTM_SYD_PM2_5"
+                    ]
+                },
+                "DPIE CTM-No-fire": {
+                    "id": "dpie-ctm-no-fire-pm2_5",
+                    "title": "DPIE/CTM-No-fire",
+                    "description": "dpie/ParticulateMatter2_5",
                     "image": "",
                     "settings": [
                         "DPIE_CTM_NSW_PM2_5",

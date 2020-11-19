@@ -3,11 +3,11 @@
         "Particulate Matter 10 - DPIE": {
             "id": "pm10",
             "title":    "Particulate Matter 10",
-            "subtitle": "DPIE/CTM, DPIE/WRF-Chem",
+            "subtitle": "DPIE/CTM-Reanalysis, DPIE/CTM-Bushfire, DPIE/CTM-No-fire",
             "sources": {
-                "DPIE CTM": {
-                    "id": "dpie-ctm-pm10",
-                    "title": "DPIE/CTM",
+                "DPIE CTM-Reanalysis": {
+                    "id": "dpie-ctm-reanalysis-pm10",
+                    "title": "DPIE/CTM-Reanalysis",
                     "description": "dpie/ParticulateMatter10",
                     "image": "",
                     "settings": [
@@ -16,13 +16,26 @@
                         "DPIE_CTM_SYD_PM10"
                     ]
                 },
-                "DPIE WRF-Chem": {
-                    "id": "dpie-wrf-pm10",
-                    "title": "DPIE/WRF-Chem",
+                "DPIE CTM-Bushfire": {
+                    "id": "dpie-ctm-bushfire-pm10",
+                    "title": "DPIE/CTM-Bushfire",
                     "description": "dpie/ParticulateMatter10",
                     "image": "",
                     "settings": [
-                        "DPIE_WRF_EAUST_PM10"
+                        "DPIE_CTM_NSW_PM10",
+                        "DPIE_CTM_GMR_PM10",
+                        "DPIE_CTM_SYD_PM10"
+                    ]
+                },
+                "DPIE CTM-No-fire": {
+                    "id": "dpie-ctm-no-firepm10",
+                    "title": "DPIE/CTM-No-fire",
+                    "description": "dpie/ParticulateMatter10",
+                    "image": "",
+                    "settings": [
+                        "DPIE_CTM_NSW_PM10",
+                        "DPIE_CTM_GMR_PM10",
+                        "DPIE_CTM_SYD_PM10"
                     ]
                 }
             }

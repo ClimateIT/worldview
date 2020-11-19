@@ -3,11 +3,11 @@
         "Sulfur Dioxide - DPIE": {
             "id": "sulfur-dioxide",
             "title":    "Sulfur Dioxide",
-            "subtitle": "DPIE/CTM, DPIE/WRF-Chem",
+            "subtitle": "DPIE/CTM-Reanalysis, DPIE/CTM-Bushfire, DPIE/CTM-No-fire",
             "sources": {
-                "DPIE CTM": {
-                    "id": "dpie-ctm-so2",
-                    "title": "DPIE/CTM",
+                "DPIE CTM-Reanalysis": {
+                    "id": "dpie-ctm-reanalysis-so2",
+                    "title": "DPIE/CTM-Reanalysis",
                     "description": "dpie/SulfurDioxide",
                     "image": "",
                     "settings": [
@@ -16,13 +16,26 @@
                         "DPIE_CTM_SYD_SO2"
                     ]
                 },
-                "DPIE WRF-Chem": {
-                    "id": "dpie-wrf-so2",
-                    "title": "DPIE/WRF-Chem",
+                "DPIE CTM-Bushfire": {
+                    "id": "dpie-ctm-bushfire-so2",
+                    "title": "DPIE/CTM-Bushfire",
                     "description": "dpie/SulfurDioxide",
                     "image": "",
                     "settings": [
-                        "DPIE_WRF_EAUST_SO2"
+                        "DPIE_CTM_NSW_SO2",
+                        "DPIE_CTM_GMR_SO2",
+                        "DPIE_CTM_SYD_SO2"
+                    ]
+                },
+                "DPIE CTM-No-fire": {
+                    "id": "dpie-ctm-no-fireso2",
+                    "title": "DPIE/CTM-No-fire",
+                    "description": "dpie/SulfurDioxide",
+                    "image": "",
+                    "settings": [
+                        "DPIE_CTM_NSW_SO2",
+                        "DPIE_CTM_GMR_SO2",
+                        "DPIE_CTM_SYD_SO2"
                     ]
                 }
        	    }

@@ -17,8 +17,7 @@
 		      "matrixSet": "Worldview_geographic"
 	      }
       },
-      "type": "wmts",
-      "futureTime": "5D"
+      "type": "wmts"
     }
   }
 }

@@ -1,9 +1,9 @@
 {
     "categories": {
         "hazards and disasters": {
-            "Air Quality": {
-                "title": "Air Quality",
-                "id": "air-quality",
+            "Air Quality Observations": {
+                "title": "Air Quality Observations",
+                "id": "air-quality-observations",
                 "image": "air-quality.jpg",
                 "description": "",
                 "measurements": [

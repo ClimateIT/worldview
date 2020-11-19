@@ -3,11 +3,22 @@
         "Carbon Monoxide - DPIE": {
             "id": "carbon-monoxide",
             "title":    "Carbon Monoxide",
-            "subtitle": "DPIE/CTM, DPIE/WRF-Chem",
+            "subtitle": "DPIE/CTM-Reanalysis, DPIE/CTM-Bushfire, DPIE/CTM-No-fire",
             "sources": {
-                "DPIE CTM": {
-                    "id": "dpie-ctm-co",
-                    "title": "DPIE/CTM",
+                "DPIE CTM-Reanalysis": {
+                    "id": "dpie-ctm-reanalysis-co",
+                    "title": "DPIE/CTM-Reanalysis",
+                    "description": "dpie/CarbonMonoxide",
+                    "image": "",
+                    "settings": [
+                        "DPIE_CTM_Reanalysis_NSW_CO",
+                        "DPIE_CTM_GMR_CO",
+                        "DPIE_CTM_SYD_CO"
+                    ]
+                },
+                "DPIE CTM-Bushfire": {
+                    "id": "dpie-ctm-bushfire-co",
+                    "title": "DPIE/CTM-Bushfire",
                     "description": "dpie/CarbonMonoxide",
                     "image": "",
                     "settings": [
@@ -16,13 +27,15 @@
                         "DPIE_CTM_SYD_CO"
                     ]
                 },
-                "DPIE WRF-Chem": {
-                    "id": "dpie-wrf-co",
-                    "title": "DPIE/WRF-Chem",
+                "DPIE CTM-No-fire": {
+                    "id": "dpie-ctm-no-fire-co",
+                    "title": "DPIE/CTM-No-fire",
                     "description": "dpie/CarbonMonoxide",
                     "image": "",
                     "settings": [
-                        "DPIE_WRF_EAUST_CO"
+                        "DPIE_CTM_NSW_CO",
+                        "DPIE_CTM_GMR_CO",
+                        "DPIE_CTM_SYD_CO"
                     ]
                 }
             }

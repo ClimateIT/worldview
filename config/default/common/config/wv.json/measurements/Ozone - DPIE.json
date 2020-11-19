@@ -3,11 +3,11 @@
         "Ozone - DPIE": {
             "id": "ozone",
             "title": "Ozone",
-            "subtitle": "DPIE/CTM, DPIE/WRF-Chem",
+            "subtitle": "DPIE/CTM-Reanalysis, DPIE/CTM-Bushfire, DPIE/CTM-No-fire",
             "sources": {
-                "DPIE CTM": {
-                    "id": "dpie-ctm-o3",
-                    "title": "DPIE/CTM",
+                "DPIE CTM-Reanalysis": {
+                    "id": "dpie-ctm-reanalysis-o3",
+                    "title": "DPIE/CTM-Reanalysis",
                     "description": "dpie/Ozone",
                     "image": "",
                     "settings": [
@@ -16,13 +16,26 @@
                         "DPIE_CTM_SYD_O3"
                     ]
                 },
-                "DPIE WRF-Chem": {
-                    "id": "dpie-wrf-o3",
-                    "title": "DPIE/WRF-Chem",
+                "DPIE CTM-Bushfire": {
+                    "id": "dpie-ctm-bushfire-o3",
+                    "title": "DPIE/CTM-Bushfire",
                     "description": "dpie/Ozone",
                     "image": "",
                     "settings": [
-                        "DPIE_WRF_EAUST_O3"
+                        "DPIE_CTM_NSW_O3",
+                        "DPIE_CTM_GMR_O3",
+                        "DPIE_CTM_SYD_O3"
+                    ]
+                },
+                "DPIE CTM-No-fire": {
+                    "id": "dpie-ctm-no-fire-o3",
+                    "title": "DPIE/CTM-No-fire",
+                    "description": "dpie/Ozone",
+                    "image": "",
+                    "settings": [
+                        "DPIE_CTM_NSW_O3",
+                        "DPIE_CTM_GMR_O3",
+                        "DPIE_CTM_SYD_O3"
                     ]
                 }
             }
