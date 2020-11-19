@@ -18,7 +18,7 @@
 	      }
       },
       "type": "wmts",
-      "futureLayer": "true"
+      "futureTime": "5D"
     }
   }
 }
