@@ -1,0 +1,11 @@
+
+Bootstrap: docker
+From: docker.io/climateit/worldview:d78d24ce
+
+%environment
+    PORT=9000
+
+    export PORT
+
+%startscript
+    nohup /bin/sh ./tasks/start.sh
