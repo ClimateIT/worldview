@@ -1,3 +1,5 @@
+# Singularity
+*.sif
 /build
 /web/build
 /web/brand

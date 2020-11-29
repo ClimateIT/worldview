@@ -11,9 +11,9 @@
                     "description": "dpie/SulfurDioxide",
                     "image": "",
                     "settings": [
-                        "DPIE_CTM_NSW_SO2",
-                        "DPIE_CTM_GMR_SO2",
-                        "DPIE_CTM_SYD_SO2"
+                        "DPIE_CTM_Reanalysis_NSW_SO2",
+                        "DPIE_CTM_Reanalysis_GMR_SO2",
+                        "DPIE_CTM_Reanalysis_Sydney_SO2"
                     ]
                 },
                 "DPIE CTM-Bushfire": {
@@ -22,9 +22,9 @@
                     "description": "dpie/SulfurDioxide",
                     "image": "",
                     "settings": [
-                        "DPIE_CTM_NSW_SO2",
-                        "DPIE_CTM_GMR_SO2",
-                        "DPIE_CTM_SYD_SO2"
+                        "DPIE_CTM_Bushfire_NSW_SO2",
+                        "DPIE_CTM_Bushfire_GMR_SO2",
+                        "DPIE_CTM_Bushfire_Sydney_SO2"
                     ]
                 },
                 "DPIE CTM-No-fire": {
@@ -33,9 +33,9 @@
                     "description": "dpie/SulfurDioxide",
                     "image": "",
                     "settings": [
-                        "DPIE_CTM_NSW_SO2",
-                        "DPIE_CTM_GMR_SO2",
-                        "DPIE_CTM_SYD_SO2"
+                        "DPIE_CTM_No-fire_NSW_SO2",
+                        "DPIE_CTM_No-fire_GMR_SO2",
+                        "DPIE_CTM_No-fire_Sydney_SO2"
                     ]
                 }
        	    }

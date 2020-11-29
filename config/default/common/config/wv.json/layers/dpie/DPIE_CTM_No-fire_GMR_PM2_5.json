@@ -1,18 +1,18 @@
 {
   "layers": {
-    "DPIE_CTM_Reanalysis_NSW_CO": {
-      "id": "DPIE_CTM_Reanalysis_NSW_CO",
-      "title": "Carbon Monoxide (New South Wales domain)",
+    "DPIE_CTM_No-fire_GMR_PM2_5": {
+      "id": "DPIE_CTM_No-fire_GMR_PM2_5",
+      "title": "Particulate Matter <= 2.4 micrometres (New South Wales Greater Metropolitan Area domain)",
       "subtitle": "NSW Dept. of Planning Industry and Environment",
-      "description": "dpie/DPIE_CTM_Reanalysis_NSW_CO",
+      "description": "dpie/DPIE_CTM_No-fire_GMR_PM2_5",
       "group": "overlays",
       "layergroup": [
 	      "dpie"
       ],
       "format": "image/png",
-      "style": "DPIE:CO",
+      "style": "DPIE:PM2_5",
       "palette": {
-	 	"id": "DPIE_CO"
+	 	"id": "DPIE_PM2_5"
       },
       "projections": {
 	      "geographic": {

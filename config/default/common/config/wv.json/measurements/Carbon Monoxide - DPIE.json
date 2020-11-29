@@ -12,8 +12,8 @@
                     "image": "",
                     "settings": [
                         "DPIE_CTM_Reanalysis_NSW_CO",
-                        "DPIE_CTM_GMR_CO",
-                        "DPIE_CTM_SYD_CO"
+                        "DPIE_CTM_Reanalysis_GMR_CO",
+                        "DPIE_CTM_Reanalysis_Sydney_CO"
                     ]
                 },
                 "DPIE CTM-Bushfire": {
@@ -22,9 +22,9 @@
                     "description": "dpie/CarbonMonoxide",
                     "image": "",
                     "settings": [
-                        "DPIE_CTM_NSW_CO",
-                        "DPIE_CTM_GMR_CO",
-                        "DPIE_CTM_SYD_CO"
+                        "DPIE_CTM_Bushfire_NSW_CO",
+                        "DPIE_CTM_Bushfire_GMR_CO",
+                        "DPIE_CTM_Bushfire_Sydney_CO"
                     ]
                 },
                 "DPIE CTM-No-fire": {
@@ -33,9 +33,9 @@
                     "description": "dpie/CarbonMonoxide",
                     "image": "",
                     "settings": [
-                        "DPIE_CTM_NSW_CO",
-                        "DPIE_CTM_GMR_CO",
-                        "DPIE_CTM_SYD_CO"
+                        "DPIE_CTM_No-fire_NSW_CO",
+                        "DPIE_CTM_No-fire_GMR_CO",
+                        "DPIE_CTM_No-fire_Sydney_CO"
                     ]
                 }
             }

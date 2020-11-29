@@ -1,10 +1,10 @@
 {
   "layers": {
-    "DPIE_CTM_Reanalysis_NSW_CO": {
-      "id": "DPIE_CTM_Reanalysis_NSW_CO",
-      "title": "Carbon Monoxide (New South Wales domain)",
+    "DPIE_CTM_Reanalysis_GMR_CO": {
+      "id": "DPIE_CTM_Reanalysis_GMR_CO",
+      "title": "Carbon Monoxide (New South Wales Greater Metropolitan Area domain)",
       "subtitle": "NSW Dept. of Planning Industry and Environment",
-      "description": "dpie/DPIE_CTM_Reanalysis_NSW_CO",
+      "description": "dpie/DPIE_CTM_Reanalysis_GMR_CO",
       "group": "overlays",
       "layergroup": [
 	      "dpie"
