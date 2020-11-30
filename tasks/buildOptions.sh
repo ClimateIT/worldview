@@ -41,7 +41,6 @@ if [ "$FETCH_GC" ] ; then
     rm -rf "$OPT_DIR/$OPT_SUBDIR/gc/*"
     rm -rf "$OPT_DIR/$OPT_SUBDIR/colormaps/gc/*"
     "$PYTHON_SCRIPTS_DIR/getCapabilities.py" "$OPT_DIR/$OPT_SUBDIR/config.json" "$OPT_DIR/$OPT_SUBDIR/gc"
-    exit 0
 fi
 
 # Copy options files to build directory, and various other file operations
