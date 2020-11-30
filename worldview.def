@@ -1,10 +1,9 @@
 
 Bootstrap: docker
-From: docker.io/climateit/worldview:d78d24ce
+From: docker.io/climateit/worldview:latest
 
 %environment
     PORT=9000
-
     export PORT
 
 %startscript
