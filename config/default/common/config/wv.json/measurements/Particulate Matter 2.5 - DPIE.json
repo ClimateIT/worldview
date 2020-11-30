@@ -3,7 +3,7 @@
         "Particulate Matter 2.5 - DPIE": {
             "id": "pm2_5",
             "title":    "Particulate Matter 2.5",
-            "subtitle": "DPIE/CTM-Reanalysis, DPIE/CTM-Bushfire, DPIE/CTM-No-fire",
+            "subtitle": "DPIE/CTM-Reanalysis, DPIE/CTM-Bushfire, DPIE/CTM-No-fire, DPIE/CTM-Planned-burn, DPIE/CTM-Bushfire-and-planned-burn",
             "sources": {
                 "DPIE CTM-Reanalysis": {
                     "id": "dpie-ctm-reanalysis-pm2_5",
@@ -36,6 +36,28 @@
                         "DPIE_CTM_No-fire_NSW_PM2_5",
                         "DPIE_CTM_No-fire_GMR_PM2_5",
                         "DPIE_CTM_No-fire_Sydney_PM2_5"
+                    ]
+                },
+                "DPIE CTM-Planned-burn": {
+                    "id": "dpie-ctm-planned-burn-pm2_5",
+                    "title": "DPIE/CTM-Planned-burn",
+                    "description": "dpie/ParticulateMatter2_5",
+                    "image": "",
+                    "settings": [
+                        "DPIE_CTM_Planned-burn_NSW_PM2_5",
+                        "DPIE_CTM_Planned-burn_GMR_PM2_5",
+                        "DPIE_CTM_Planned-burn_Sydney_PM2_5"
+                    ]
+                },
+                "DPIE CTM-Bushfire-and-planned-burn": {
+                    "id": "dpie-ctm-bushfire-and-planned-burn-pm2_5",
+                    "title": "DPIE/CTM-Bushfire-and-planned-burn",
+                    "description": "dpie/ParticulateMatter2_5",
+                    "image": "",
+                    "settings": [
+                        "DPIE_CTM_Bushfire-and-planned-burn_NSW_PM2_5",
+                        "DPIE_CTM_Bushfire-and-planned-burn_GMR_PM2_5",
+                        "DPIE_CTM_Bushfire-and-planned-burn_Sydney_PM2_5"
                     ]
                 }
             }

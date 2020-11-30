@@ -2,7 +2,7 @@
   "layers": {
     "DPIE_CTM_No-fire_Sydney_CO": {
       "id": "DPIE_CTM_No-fire_Sydney_CO",
-      "title": "Carbon Monoxide (Sydney domain)",
+      "title": "Carbon Monoxide (Sydney)",
       "subtitle": "NSW Dept. of Planning Industry and Environment",
       "description": "dpie/DPIE_CTM_No-fire_Sydney_CO",
       "group": "overlays",

@@ -2,7 +2,7 @@
   "layers": {
     "DPIE_CTM_Bushfire_GMR_PM2_5": {
       "id": "DPIE_CTM_Bushfire_GMR_PM2_5",
-      "title": "Particulate Matter <= 2.4 micrometres (New South Wales Greater Metropolitan Area domain)",
+      "title": "Particulate Matter <= 2.4 micrometres (New South Wales Greater Metropolitan Area)",
       "subtitle": "NSW Dept. of Planning Industry and Environment",
       "description": "dpie/DPIE_CTM_Bushfire_GMR_PM2_5",
       "group": "overlays",

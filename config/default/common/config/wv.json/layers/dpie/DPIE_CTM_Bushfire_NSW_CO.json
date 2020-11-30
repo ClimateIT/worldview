@@ -2,7 +2,7 @@
   "layers": {
     "DPIE_CTM_Bushfire_NSW_CO": {
       "id": "DPIE_CTM_Bushfire_NSW_CO",
-      "title": "Carbon Monoxide (New South Wales domain)",
+      "title": "Carbon Monoxide (New South Wales)",
       "subtitle": "NSW Dept. of Planning Industry and Environment",
       "description": "dpie/DPIE_CTM_Bushfire_NSW_CO",
       "group": "overlays",

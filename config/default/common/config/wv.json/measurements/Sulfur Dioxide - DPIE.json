@@ -3,7 +3,7 @@
         "Sulfur Dioxide - DPIE": {
             "id": "sulfur-dioxide",
             "title":    "Sulfur Dioxide",
-            "subtitle": "DPIE/CTM-Reanalysis, DPIE/CTM-Bushfire, DPIE/CTM-No-fire",
+            "subtitle": "DPIE/CTM-Reanalysis, DPIE/CTM-Bushfire, DPIE/CTM-No-fire, DPIE/CTM-Planned-burn, DPIE/CTM-Bushfire-and-planned-burn",
             "sources": {
                 "DPIE CTM-Reanalysis": {
                     "id": "dpie-ctm-reanalysis-so2",
@@ -28,7 +28,7 @@
                     ]
                 },
                 "DPIE CTM-No-fire": {
-                    "id": "dpie-ctm-no-fireso2",
+                    "id": "dpie-ctm-no-fires-so2",
                     "title": "DPIE/CTM-No-fire",
                     "description": "dpie/SulfurDioxide",
                     "image": "",
@@ -36,6 +36,28 @@
                         "DPIE_CTM_No-fire_NSW_SO2",
                         "DPIE_CTM_No-fire_GMR_SO2",
                         "DPIE_CTM_No-fire_Sydney_SO2"
+                    ]
+                },
+                "DPIE CTM-Planned-burn": {
+                    "id": "dpie-ctm-planned-burn-so2",
+                    "title": "DPIE/CTM-Planned-burn",
+                    "description": "dpie/SulfurDioxide",
+                    "image": "",
+                    "settings": [
+                        "DPIE_CTM_Planned-burn_NSW_SO2",
+                        "DPIE_CTM_Planned-burn_GMR_SO2",
+                        "DPIE_CTM_Planned-burn_Sydney_SO2"
+                    ]
+                },
+                "DPIE CTM-Bushfire-and-planned-burn": {
+                    "id": "dpie-ctm-bushfire-and-planned-burn-so2",
+                    "title": "DPIE/CTM-Bushfire-and-planned-burn",
+                    "description": "dpie/SulfurDioxide",
+                    "image": "",
+                    "settings": [
+                        "DPIE_CTM_Bushfire-and-planned-burn_NSW_SO2",
+                        "DPIE_CTM_Bushfire-and-planned-burn_GMR_SO2",
+                        "DPIE_CTM_Bushfire-and-planned-burn_Sydney_SO2"
                     ]
                 }
        	    }

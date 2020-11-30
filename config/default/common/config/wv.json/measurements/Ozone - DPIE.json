@@ -3,7 +3,7 @@
         "Ozone - DPIE": {
             "id": "ozone",
             "title": "Ozone",
-            "subtitle": "DPIE/CTM-Reanalysis, DPIE/CTM-Bushfire, DPIE/CTM-No-fire",
+            "subtitle": "DPIE/CTM-Reanalysis, DPIE/CTM-Bushfire, DPIE/CTM-No-fire, DPIE/CTM-Planned-burn, DPIE/CTM-Bushfire-and-planned-burn",
             "sources": {
                 "DPIE CTM-Reanalysis": {
                     "id": "dpie-ctm-reanalysis-o3",
@@ -36,6 +36,28 @@
                         "DPIE_CTM_No-fire_NSW_O3",
                         "DPIE_CTM_No-fire_GMR_O3",
                         "DPIE_CTM_No-fire_Sydney_O3"
+                    ]
+                },
+                "DPIE CTM-Planned-burn": {
+                    "id": "dpie-ctm-planned-burn-o3",
+                    "title": "DPIE/CTM-Planned-burn",
+                    "description": "dpie/Ozone",
+                    "image": "",
+                    "settings": [
+                        "DPIE_CTM_Planned-burn_NSW_O3",
+                        "DPIE_CTM_Planned-burn_GMR_O3",
+                        "DPIE_CTM_Planned-burn_Sydney_O3"
+                    ]
+                },
+                "DPIE CTM-Bushfire-and-planned-burn": {
+                    "id": "dpie-ctm-bushfire-and-planned-burn-o3",
+                    "title": "DPIE/CTM-Bushfire-and-planned-burn",
+                    "description": "dpie/Ozone",
+                    "image": "",
+                    "settings": [
+                        "DPIE_CTM_Bushfire-and-planned-burn_NSW_O3",
+                        "DPIE_CTM_Bushfire-and-planned-burn_GMR_O3",
+                        "DPIE_CTM_Bushfire-and-planned-burn_Sydney_O3"
                     ]
                 }
             }

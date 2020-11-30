@@ -3,7 +3,7 @@
         "Nitrogen Dioxide - DPIE": {
             "id": "nitrogen-dioxide",
             "title":    "Nitrogen Dioxide",
-            "subtitle": "DPIE/CTM-Reanalysis, DPIE/CTM-Bushfire, DPIE/CTM-No-fire",
+            "subtitle": "DPIE/CTM-Reanalysis, DPIE/CTM-Bushfire, DPIE/CTM-No-fire, DPIE/CTM-Planned-burn, DPIE/CTM-Bushfire-and-planned-burn",
             "sources": {
                 "DPIE CTM-Reanalysis": {
                     "id": "dpie-ctm-reanalysis-no2",
@@ -15,9 +15,7 @@
                         "DPIE_CTM_Reanalysis_GMR_NO2",
                         "DPIE_CTM_Reanalysis_Sydney_NO2"
                     ]
-                }
-            },
-            "sources": {
+                },
                 "DPIE CTM-Bushfire": {
                     "id": "dpie-ctm-bushfire-no2",
                     "title": "DPIE/CTM-Bushfire",
@@ -28,9 +26,7 @@
                         "DPIE_CTM_Bushfire_GMR_NO2",
                         "DPIE_CTM_Bushfire_Sydney_NO2"
                     ]
-                }
-            },
-            "sources": {
+                },
                 "DPIE CTM-No-fire": {
                     "id": "dpie-ctm-no-fire-no2",
                     "title": "DPIE/CTM-No-fire",
@@ -40,6 +36,28 @@
                         "DPIE_CTM_No-fire_NSW_NO2",
                         "DPIE_CTM_No-fire_GMR_NO2",
                         "DPIE_CTM_No-fire_Sydney_NO2"
+                    ]
+                },
+                "DPIE CTM-Planned-burn": {
+                    "id": "dpie-ctm-planned-burn-no2",
+                    "title": "DPIE/CTM-Planned-burn",
+                    "description": "dpie/NitrogenDioxide",
+                    "image": "",
+                    "settings": [
+                        "DPIE_CTM_Planned-burn_NSW_NO2",
+                        "DPIE_CTM_Planned-burn_GMR_NO2",
+                        "DPIE_CTM_Planned-burn_Sydney_NO2"
+                    ]
+                },
+                "DPIE CTM-Bushfire-and-planned-burn": {
+                    "id": "dpie-ctm-bushfire-and-planned-burn-no2",
+                    "title": "DPIE/CTM-Bushfire-and-planned-burn",
+                    "description": "dpie/NitrogenDioxide",
+                    "image": "",
+                    "settings": [
+                        "DPIE_CTM_Bushfire-and-planned-burn_NSW_NO2",
+                        "DPIE_CTM_Bushfire-and-planned-burn_GMR_NO2",
+                        "DPIE_CTM_Bushfire-and-planned-burn_Sydney_NO2"
                     ]
                 }
             }

@@ -1,0 +1,27 @@
+{
+  "layers": {
+    "DPIE_CTM_Bushfire-and-planned-burn_NSW_NO": {
+      "id": "DPIE_CTM_Bushfire-and-planned-burn_NSW_NO",
+      "title": "Nitrogen Monoxide (New South Wales)",
+      "subtitle": "NSW Dept. of Planning Industry and Environment",
+      "description": "dpie/DPIE_CTM_Bushfire-and-planned-burn_NSW_NO",
+      "group": "overlays",
+      "layergroup": [
+	      "dpie"
+      ],
+      "format": "image/png",
+      "style": "DPIE:NO",
+      "palette": {
+	 	"id": "DPIE_NO"
+      },
+      "projections": {
+	      "geographic": {
+		      "source": "DPIE:wmts",
+		      "matrixSet": "Worldview_geographic"
+	      }
+      },
+      "type": "wmts",
+      "futureTime": "5D"
+    }
+  }
+}

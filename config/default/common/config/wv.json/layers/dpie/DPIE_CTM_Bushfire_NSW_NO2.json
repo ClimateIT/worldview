@@ -2,7 +2,7 @@
   "layers": {
     "DPIE_CTM_Bushfire_NSW_NO2": {
       "id": "DPIE_CTM_Bushfire_NSW_NO2",
-      "title": "Nitrogen Dioxide (New South Wales domain)",
+      "title": "Nitrogen Dioxide (New South Wales)",
       "subtitle": "NSW Dept. of Planning Industry and Environment",
       "description": "dpie/DPIE_CTM_Bushfire_NSW_NO2",
       "group": "overlays",
