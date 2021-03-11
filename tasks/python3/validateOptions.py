@@ -89,8 +89,9 @@ for layer_id in list(wv["layers"].keys()):
             remove_layer(wv, layer_id)
             continue
     if "projections" not in layer or len(layer["projections"]) == 0:
-        error("[%s] No projections defined or not found in GC documents" %
-            layer_id)
+        print("[%s] No projections defined or not found in GC documents" % layer_id)
+        #error("[%s] No projections defined or not found in GC documents" %
+        #    layer_id)
         remove_layer(wv, layer_id)
         continue
     if "type" not in layer:
@@ -194,8 +195,10 @@ for measurement in list(wv["measurements"].values()):
             continue
         for setting in source["settings"]:
             if setting not in wv["layers"]:
-                error("In measurement %s, source %s, layer not found: %s" %
-                    (measurement["id"], source["id"], setting))
+                print("In measurement %s, source %s, layer not found: %s" %
+                      (measurement["id"], source["id"], setting))
+                #error("In measurement %s, source %s, layer not found: %s" %
+                #    (measurement["id"], source["id"], setting))
 
 print("%s: %d error(s), %d warning(s), %d removed" % (prog, error_count,
         warning_count, remove_count))
