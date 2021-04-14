@@ -2,7 +2,7 @@
   "layers": {
     "DPIE_CTM_Reanalysis_GMR_PM2_5": {
       "id": "DPIE_CTM_Reanalysis_GMR_PM2_5",
-      "title": "Particulate Matter <= 2.4 micrometres (New South Wales Greater Metropolitan Area)",
+      "title": "PM 2.5 CTM Reanalysis (New South Wales Greater Metropolitan Area)",
       "subtitle": "NSW Dept. of Planning Industry and Environment",
       "description": "dpie/DPIE_CTM_Reanalysis_GMR_PM2_5",
       "group": "overlays",

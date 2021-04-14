@@ -3,7 +3,7 @@
         "Ozone - DPIE": {
             "id": "ozone",
             "title": "Ozone",
-            "subtitle": "DPIE/CTM-Reanalysis, DPIE/CTM-Bushfire, DPIE/CTM-No-fire, DPIE/CTM-Planned-burn, DPIE/CTM-Bushfire-and-planned-burn",
+            "subtitle": "DPIE/CTM-Reanalysis, DPIE/CTM-Bushfire, DPIE/CTM-No-fire, DPIE/CTM-Planned-burn, DPIE/CTM-Bushfire-and-planned-burn, DPIE/WRF-CMAQ-Reanalysis",
             "sources": {
                 "DPIE CTM-Reanalysis": {
                     "id": "dpie-ctm-reanalysis-o3",
@@ -58,6 +58,17 @@
                         "DPIE_CTM_Bushfire-and-planned-burn_NSW_O3",
                         "DPIE_CTM_Bushfire-and-planned-burn_GMR_O3",
                         "DPIE_CTM_Bushfire-and-planned-burn_Sydney_O3"
+                    ]
+                },
+                "DPIE WRF-CMAQ-Reanalysis": {
+                    "id": "dpie-wrf-cmaq-reanalysis-o3",
+                    "title": "DPIE/WRF-CMAQ-Reanalysis",
+                    "description": "dpie/Ozone",
+                    "image": "",
+                    "settings": [
+                        "DPIE_WRF-CMAQ_Reanalysis_NSW_O3",
+                        "DPIE_WRF-CMAQ_Reanalysis_GMR_O3",
+                        "DPIE_WRF-CMAQ_Reanalysis_Sydney_O3"
                     ]
                 }
             }

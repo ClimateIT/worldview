@@ -2,7 +2,7 @@
   "layers": {
     "DPIE_CTM_Bushfire-and-planned-burn_GMR_CO": {
       "id": "DPIE_CTM_Bushfire-and-planned-burn_GMR_CO",
-      "title": "Carbon Monoxide (New South Wales Greater Metropolitan Area)",
+      "title": "Carbon Monoxide CTM Bushfire-and-planned-burn (New South Wales Greater Metropolitan Area)",
       "subtitle": "NSW Dept. of Planning Industry and Environment",
       "description": "dpie/DPIE_CTM_Bushfire-and-planned-burn_GMR_CO",
       "group": "overlays",

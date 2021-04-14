@@ -2,7 +2,7 @@
   "layers": {
     "DPIE_CTM_No-fire_NSW_PM2_5": {
       "id": "DPIE_CTM_No-fire_NSW_PM2_5",
-      "title": "Particulate Matter <= 2.4 micrometres (New South Wales)",
+      "title": "PM 2.5 CTM No-fire (New South Wales)",
       "subtitle": "NSW Dept. of Planning Industry and Environment",
       "description": "dpie/DPIE_CTM_No-fire_NSW_PM2_5",
       "group": "overlays",

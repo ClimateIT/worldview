@@ -2,7 +2,7 @@
   "layers": {
     "DPIE_CTM_No-fire_GMR_NO": {
       "id": "DPIE_CTM_No-fire_GMR_NO",
-      "title": "Nitrogen Monoxide (New South Wales Greater Metropolitan Area)",
+      "title": "Nitrogen Monoxide CTM No-fire (New South Wales Greater Metropolitan Area)",
       "subtitle": "NSW Dept. of Planning Industry and Environment",
       "description": "dpie/DPIE_CTM_No-fire_GMR_NO",
       "group": "overlays",

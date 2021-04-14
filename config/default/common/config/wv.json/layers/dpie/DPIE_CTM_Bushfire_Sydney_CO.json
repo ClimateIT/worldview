@@ -2,7 +2,7 @@
   "layers": {
     "DPIE_CTM_Bushfire_Sydney_CO": {
       "id": "DPIE_CTM_Bushfire_Sydney_CO",
-      "title": "Carbon Monoxide (Sydney)",
+      "title": "Carbon Monoxide CTM Bushfire (Sydney)",
       "subtitle": "NSW Dept. of Planning Industry and Environment",
       "description": "dpie/DPIE_CTM_Bushfire_Sydney_CO",
       "group": "overlays",

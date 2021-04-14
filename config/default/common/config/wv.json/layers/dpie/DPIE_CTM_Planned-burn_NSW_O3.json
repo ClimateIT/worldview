@@ -2,7 +2,7 @@
   "layers": {
     "DPIE_CTM_Planned-burn_NSW_O3": {
       "id": "DPIE_CTM_Planned-burn_NSW_O3",
-      "title": "Ozone (New South Wales)",
+      "title": "Ozone CTM Planned-burn (New South Wales)",
       "subtitle": "NSW Dept. of Planning Industry and Environment",
       "description": "dpie/DPIE_CTM_Planned-burn_NSW_O3",
       "group": "overlays",

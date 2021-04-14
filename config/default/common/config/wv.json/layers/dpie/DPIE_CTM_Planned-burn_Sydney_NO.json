@@ -2,7 +2,7 @@
   "layers": {
     "DPIE_CTM_Planned-burn_Sydney_NO": {
       "id": "DPIE_CTM_Planned-burn_Sydney_NO",
-      "title": "Nitrogen Monoxide (Sydney)",
+      "title": "Nitrogen Monoxide CTM Planned-burn (Sydney)",
       "subtitle": "NSW Dept. of Planning Industry and Environment",
       "description": "dpie/DPIE_CTM_Planned-burn_Sydney_NO",
       "group": "overlays",
