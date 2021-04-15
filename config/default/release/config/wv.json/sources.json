@@ -22,13 +22,13 @@
             "url": "https://gis.unep-wcmc.org/arcgis/services/wdpa/public/MapServer/WMSServer"
         },
         "DPIE:wms": {
-           "url": "http://worldview.climateit.com.au/geoserver/DPIE/wms"
+           "url": "http://localhost:9080/geoserver/DPIE/wms"
         },
         "DPIE:wmts": {
-           "url": "http://worldview.climateit.com.au/geoserver/DPIE/gwc/service/wmts"
+           "url": "http://localhost:9080/geoserver/DPIE/gwc/service/wmts"
         },
         "ACOM:wmts": {
-           "url": "http://worldview.climateit.com.au/onearth/wmts/epsg4326/wmts.cgi"
+           "url": "http://localhost:9080/onearth/wmts/epsg4326/wmts.cgi"
         }
     }
 }

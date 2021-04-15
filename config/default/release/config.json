@@ -13,11 +13,11 @@
             "to": "gibs-antarctic.xml"
         },
         {
-            "from": "http://worldview.climateit.com.au/geoserver/DPIE/gwc/service/wmts?request=GetCapabilities",
+            "from": "http://localhost:8070/geoserver/DPIE/gwc/service/wmts?request=GetCapabilities",
             "to": "dpie.xml"
         },
         {
-            "from": "http://worldview.climateit.com.au/onearth/wmts/epsg4326/wmts.cgi?request=GetCapabilities",
+            "from": "https://worldview.acom.ucar.edu/onearth/wmts/epsg4326/wmts.cgi?request=GetCapabilities",
             "to": "acom.xml"
         }
     ],
