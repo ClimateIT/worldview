@@ -1,0 +1,27 @@
+{
+  "layers": {
+    "DPIE_WRF-CMAQ_Reanalysis_Sydney_O3": {
+      "id": "DPIE_WRF-CMAQ_Reanalysis_Sydney_O3",
+      "title": "Ozone WRF-CMAQ Reanalysis (Sydney)",
+      "subtitle": "NSW Dept. of Planning Industry and Environment",
+      "description": "dpie/DPIE_WRF-CMAQ_Reanalysis_Sydney_O3",
+      "group": "overlays",
+      "layergroup": [
+	      "dpie"
+      ],
+      "format": "image/png",
+      "style": "DPIE:O3",
+      "palette": {
+	 	"id": "DPIE_O3"
+      },
+      "projections": {
+	      "geographic": {
+		      "source": "DPIE:wmts",
+		      "matrixSet": "Worldview_geographic"
+	      }
+      },
+      "type": "wmts",
+      "futureTime": "5D"
+    }
+  }
+}

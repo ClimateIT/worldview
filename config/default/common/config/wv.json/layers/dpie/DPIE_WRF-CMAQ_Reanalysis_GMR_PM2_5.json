@@ -1,0 +1,27 @@
+{
+  "layers": {
+    "DPIE_WRF-CMAQ_Reanalysis_GMR_PM2_5": {
+      "id": "DPIE_WRF-CMAQ_Reanalysis_GMR_PM2_5",
+      "title": "PM 2.5 WRF-CMAQ Reanalysis (New South Wales Greater Metropolitan Area)",
+      "subtitle": "NSW Dept. of Planning Industry and Environment",
+      "description": "dpie/DPIE_WRF-CMAQ_Reanalysis_GMR_PM2_5",
+      "group": "overlays",
+      "layergroup": [
+	      "dpie"
+      ],
+      "format": "image/png",
+      "style": "DPIE:PM2_5",
+      "palette": {
+	 	"id": "DPIE_PM2_5"
+      },
+      "projections": {
+	      "geographic": {
+		      "source": "DPIE:wmts",
+		      "matrixSet": "Worldview_geographic"
+	      }
+      },
+      "type": "wmts",
+      "futureTime": "5D"
+    }
+  }
+}

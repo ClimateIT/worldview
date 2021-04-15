@@ -1,0 +1,27 @@
+{
+  "layers": {
+    "DPIE_WRF-CMAQ_Reanalysis_Sydney_PM10": {
+      "id": "DPIE_WRF-CMAQ_Reanalysis_Sydney_PM10",
+      "title": "PM 10 WRF-CMAQ Reanalysis (Sydney)",
+      "subtitle": "NSW Dept. of Planning Industry and Environment",
+      "description": "dpie/DPIE_WRF-CMAQ_Reanalysis_Sydney_PM10",
+      "group": "overlays",
+      "layergroup": [
+	      "dpie"
+      ],
+      "format": "image/png",
+      "style": "DPIE:PM10",
+      "palette": {
+	 	"id": "DPIE_PM10"
+      },
+      "projections": {
+	      "geographic": {
+		      "source": "DPIE:wmts",
+		      "matrixSet": "Worldview_geographic"
+	      }
+      },
+      "type": "wmts",
+      "futureTime": "5D"
+    }
+  }
+}

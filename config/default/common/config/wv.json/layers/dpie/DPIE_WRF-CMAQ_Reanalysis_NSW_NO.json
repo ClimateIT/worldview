@@ -1,0 +1,27 @@
+{
+  "layers": {
+    "DPIE_WRF-CMAQ_Reanalysis_NSW_NO": {
+      "id": "DPIE_WRF-CMAQ_Reanalysis_NSW_NO",
+      "title": "Nitrogen Monoxide WRF-CMAQ Reanalysis (New South Wales)",
+      "subtitle": "NSW Dept. of Planning Industry and Environment",
+      "description": "dpie/DPIE_WRF-CMAQ_Reanalysis_NSW_NO",
+      "group": "overlays",
+      "layergroup": [
+	      "dpie"
+      ],
+      "format": "image/png",
+      "style": "DPIE:NO",
+      "palette": {
+	 	"id": "DPIE_NO"
+      },
+      "projections": {
+	      "geographic": {
+		      "source": "DPIE:wmts",
+		      "matrixSet": "Worldview_geographic"
+	      }
+      },
+      "type": "wmts",
+      "futureTime": "5D"
+    }
+  }
+}

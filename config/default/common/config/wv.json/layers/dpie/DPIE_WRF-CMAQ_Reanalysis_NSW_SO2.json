@@ -1,0 +1,27 @@
+{
+  "layers": {
+    "DPIE_WRF-CMAQ_Reanalysis_NSW_SO2": {
+      "id": "DPIE_WRF-CMAQ_Reanalysis_NSW_SO2",
+      "title": "Sulfure Dioxide WRF-CMAQ Reanalysis (New South Wales)",
+      "subtitle": "NSW Dept. of Planning Industry and Environment",
+      "description": "dpie/DPIE_WRF-CMAQ_Reanalysis_NSW_SO2",
+      "group": "overlays",
+      "layergroup": [
+	      "dpie"
+      ],
+      "format": "image/png",
+      "style": "DPIE:SO2",
+      "palette": {
+	 	"id": "DPIE_SO2"
+      },
+      "projections": {
+	      "geographic": {
+		      "source": "DPIE:wmts",
+		      "matrixSet": "Worldview_geographic"
+	      }
+      },
+      "type": "wmts",
+      "futureTime": "5D"
+    }
+  }
+}
